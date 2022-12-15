@@ -1,0 +1,39 @@
+ERROR - 2022-12-14 16:56:41 --> mysqli_sql_exception: Column 'area' cannot be null in C:\laragon\www\gestion_empleados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\gestion_empleados\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\laragon\www\gestion_empleados\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\laragon\www\gestion_empleados\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\laragon\www\gestion_empleados\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\laragon\www\gestion_empleados\app\Models\EmployeModel.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\gestion_empleados\app\Controllers\Home.php(41): App\Models\EmployeModel->setEmploye(Array)
+#6 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(927): App\Controllers\Home->setEmploye()
+#7 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\gestion_empleados\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-12-14 17:11:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`accessa_logistics`.`empleados`, CONSTRAINT `empleados_areas_FK` FOREIGN KEY (`area`) REFERENCES `areas` (`id`)) in C:\laragon\www\gestion_empleados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\gestion_empleados\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\laragon\www\gestion_empleados\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\laragon\www\gestion_empleados\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\laragon\www\gestion_empleados\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\laragon\www\gestion_empleados\app\Models\EmployeModel.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\gestion_empleados\app\Controllers\Home.php(61): App\Models\EmployeModel->setEmploye(Array)
+#6 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(927): App\Controllers\Home->setEmploye()
+#7 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\gestion_empleados\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-12-14 18:09:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`accessa_logistics`.`empleados`, CONSTRAINT `empleados_areas_FK` FOREIGN KEY (`area`) REFERENCES `areas` (`id`)) in C:\laragon\www\gestion_empleados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\gestion_empleados\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `emplead...', 0)
+#1 C:\laragon\www\gestion_empleados\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `emplead...')
+#2 C:\laragon\www\gestion_empleados\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `emplead...')
+#3 C:\laragon\www\gestion_empleados\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `emplead...', Array, false)
+#4 C:\laragon\www\gestion_empleados\app\Models\EmployeModel.php(33): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\gestion_empleados\app\Controllers\Home.php(72): App\Models\EmployeModel->updateEmploye(Array, '1')
+#6 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(927): App\Controllers\Home->updateEmploye()
+#7 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\gestion_empleados\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\gestion_empleados\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
