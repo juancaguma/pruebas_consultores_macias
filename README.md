@@ -5,6 +5,7 @@
 #### La base de satos se utilizo Mysql 8.0
 #### Jquery para la funcionalidad y presentado de la información
 #### JavaScript con el uso de AJAX para las peticiones
+#### Como servidor local se utilizo Laragon 
 
 ## Ejercicios 
 #### Se anexa el ER de la base de datos asi como el SQL para realizar el restore
